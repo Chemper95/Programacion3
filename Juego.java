@@ -11,8 +11,20 @@ public class Juego extends JPanel{
 	public Juego() {
 	}
 	
-	public void mover() {
-		covid.mover();
+	public void moverderecha() {
+		covid.moverderecha();
+	}
+	
+	public void moverizquierda() {
+		covid.moverizquierda();
+	}
+	
+	public void moverarriba() {
+		covid.moverarriba();
+	}
+	
+	public void moverabajo() {
+		covid.moverabajo();
 	}
 	
 	public void paintComponent(Graphics g) {
@@ -24,7 +36,10 @@ public class Juego extends JPanel{
 	public void dibuja (Graphics2D g) {
 		fondo.paint(g);
 		covid.paint(g);
-		mover();
+		moverabajo();
+		moverarriba();
+		moverderecha();
+		moverizquierda();
 	}
 
 }

@@ -15,7 +15,7 @@ public class Fondo {
 	}
 
 	public void paint(Graphics2D g) {
-		ImageIcon fondo = new ImageIcon(getClass().getResource("/DesarrolloJuego/background.png"));
+		ImageIcon fondo = new ImageIcon(getClass().getResource("/JuegoCovid/background.png"));
 		g.drawImage(fondo.getImage(), x, y, anchof, largof, null);
 	}
 }

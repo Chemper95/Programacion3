@@ -11,7 +11,7 @@ public class JuegoFinCovid {
 		frame.pack();
 		frame.setVisible(true);
 		frame.setSize(600,700);
-		frame.setLocation(70,200);
+		frame.setLocation(100,50);
 		
 		while (true) {
 			juegocovid.repaint();
