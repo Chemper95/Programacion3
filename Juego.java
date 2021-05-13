@@ -6,25 +6,24 @@ import javax.swing.JPanel;
 
 public class Juego extends JPanel{
 	COVID covid = new COVID(this);
+	COVID covid1 = new COVID(this);
+	COVID covid2 = new COVID(this);
 	Fondo fondo = new Fondo(this);
 	
 	public Juego() {
 	}
 	
-	public void moverderecha() {
-		covid.moverderecha();
+	public void mover() {
+		covid.mover();
 	}
 	
-	public void moverizquierda() {
-		covid.moverizquierda();
+	
+	public void mover1() {
+		covid1.mover();
 	}
 	
-	public void moverarriba() {
-		covid.moverarriba();
-	}
-	
-	public void moverabajo() {
-		covid.moverabajo();
+	public void mover2() {
+		covid2.mover();
 	}
 	
 	public void paintComponent(Graphics g) {
@@ -36,10 +35,10 @@ public class Juego extends JPanel{
 	public void dibuja (Graphics2D g) {
 		fondo.paint(g);
 		covid.paint(g);
-		moverabajo();
-		moverarriba();
-		moverderecha();
-		moverizquierda();
+		covid1.paint(g);
+		covid2.paint(g);
+		mover();
+
 	}
 
 }

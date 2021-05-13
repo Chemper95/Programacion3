@@ -3,7 +3,7 @@ package DesarrolloJuego;
 import java.awt.*;
 import javax.swing.*;
 
-public class COVID{
+public class COVID1 {
 	Juego covidjuego;
 	
 	int ancho = 75;
@@ -12,12 +12,12 @@ public class COVID{
 	static int y_ini = 500;
 	static int x_aux = -5;
 
-	public COVID(Juego covidjuego) {
+	public COVID1(Juego covidjuego) {
 		this.covidjuego = covidjuego;
 	}
 	
 	
-public void mover() {
+public void mover1() {
 	if(x_ini<=200) {
 		x_ini = 600;
 	}
@@ -25,8 +25,6 @@ public void mover() {
 		x_ini+=x_aux;
 	}
 }
-
-
 
 
 public void paint(Graphics2D g) {
